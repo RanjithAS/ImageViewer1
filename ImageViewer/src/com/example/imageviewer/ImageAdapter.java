@@ -10,7 +10,7 @@ import android.widget.ImageView;
 public class ImageAdapter extends BaseAdapter {
 	private Context mContext;
 
-	public ImageAdapter(Context c) { 
+	public ImageAdapter(Context c) {  
 		mContext = c;
 	}
 
