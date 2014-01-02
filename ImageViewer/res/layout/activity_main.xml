@@ -1,0 +1,43 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView"
+    android:layout_height="fill_parent" android:layout_width="fill_parent" android:fillViewport="true" android:scrollbars="vertical">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parentLayout"
+    android:scrollbars="horizontal"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/top_curtain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/top_curtain"
+        android:src="@drawable/top_curtain" />
+
+    
+
+    <LinearLayout
+        android:id="@+id/image_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="280dp"
+        android:layout_below="@id/top_curtain"
+        android:orientation="horizontal" >
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/below_curtain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_layout"
+        android:contentDescription="@string/below_curtain"
+        android:src="@drawable/top_curtain" />
+
+    
+
+</RelativeLayout>
+</ScrollView>
